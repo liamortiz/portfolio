@@ -1,0 +1,83 @@
+* {margin: 0; padding: 0;}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@font-face {
+  font-family: "roboto";
+  src : url("./fonts/Roboto-Regular.ttf")
+}
+
+$font-sizes : ("regular" : 100%, "medium" : 150%, "large" : 200%);
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'roboto', 'Helvetica';
+}
+
+// Navigation
+nav {
+  position: absolute;
+  font-family: 'roboto';
+  .active {
+    color: gold;
+    & + span {width: 100%;}
+  }
+  span {
+    display: block;
+    margin-top: .2em;
+    width: 0;
+    height: 1px;
+    border-bottom: 5px dashed gold;
+    transition: width .3s;
+  }
+  a {
+    color: white;
+    &:hover {
+      & + span {width: 100%;}
+    }
+  }
+  ul {
+    margin-top: 1em;
+  }
+  li {
+    list-style-type: none;
+    float: left;
+    padding: 0 1em 0 1em;
+  }
+}
+// Main Header
+header {
+  background: #0d0d0d;
+  color: white;
+  text-align: center;
+  font-family: 'roboto';
+  font-size: 150%;
+  height: 30rem;
+  .monitor-icon {
+    height: 100px;
+    width: 100%;
+    display: inline-block;
+    background-image: url("./images/monitor.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 1.5em;
+  }
+  h1 {
+    padding-top: 2.5em;
+  }
+  p {
+    font-size: 70%;
+    font-weight: bold;
+    span {color: gold;}
+  }
+}
+// Project Section
+#project-section {
+  text-align: center;
+  h2 {
+    margin-top: 2em;
+    font-size: map-get($font-sizes, "large");
+  }
+}

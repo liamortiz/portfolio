@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import DSTPreviewImage from '../images/dstpreview.png';
 
 // TODO: Include a short description of the project
 // TODO: Include used languages and tools
@@ -14,28 +15,26 @@ class Project extends Component {
 
         <div className = "project-container">
           <div className = "project-box">
-            <h4>DST Lookup Tool</h4>
-            <div className = "project-img"></div>
-            <a href = "" target = "_bank">Demo</a>
-            <a href = "" target = "_blank">Code</a>
-          </div>
-          <div className = "project-box">
-            <h4>Dillopass</h4>
-            <div className = "project-img"></div>
-            <a href = "" target = "_bank">Demo</a>
-            <a href = "" target = "_blank">Code</a>
-          </div>
-          <div className = "project-box">
-            <h4>Greenpaws</h4>
-            <div className = "project-img"></div>
-            <a href = "" target = "_bank">Demo</a>
-            <a href = "" target = "_blank">Code</a>
-          </div>
-          <div className = "project-box">
-            <h4>Untitled</h4>
-            <div className = "project-img"></div>
-            <a href = "" target = "_bank">Demo</a>
-            <a href = "" target = "_blank">Code</a>
+            <div className = "project-description">
+              <h3>Recipe Look Up</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia, felis id pellentesque vestibulum,
+                ipsum lorem tincidunt lacus, nec interdum felis sem vitae ex. Vestibulum tempus eros sit amet urna tempor,
+                ac sollicitudin metus interdum. Aenean scelerisque gravida fringilla.
+               </p>
+               <h4>Tools</h4>
+               <ul className = "tools-list">
+                <li>React</li>
+                <li>CSS + SASS</li>
+                <li>HTML5</li>
+               </ul>
+               <div className = "project-buttons">
+                 <a href = "">Demo</a>
+                 <a href = "">Code</a>
+               </div>
+
+            </div>
+            <img src  = {DSTPreviewImage} className = "project-img" />
           </div>
         </div>
       </div>

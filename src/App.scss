@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 
 // Navigation
 nav {
-  position: absolute;
+  position: fixed;
   font-family: 'roboto';
   .active {
     color: gold;
@@ -92,35 +92,62 @@ header {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 2em auto;
+    margin: 5em auto;
 
-    .project-img {
-      width: 100%;
-      height: 240px;
-    }
-    h4 {
-      font-weight: lighter;
-      padding-top: 1em;
+    .project-box {
+      display: flex;
     }
 
-    a {
-      font-family: 'roboto';
-      font-size: 90%;
-      display: inline-block;
-      color: white;
-      background: $main-color;
-      width: 5rem;
-      padding: .5em;
-      margin: 0 1em 0 1em;
-      transition: all .2s;
-      &:hover {
-        background: gold;
-        color: black;
+    .project-description {
+      max-width: 35rem;
+      h3, h4 {
+        font-size: 150%;
+        font-weight: lighter;
+        margin: 1em 0;
+      }
+      p {
+        max-width: 80%;
+        text-align: left;
+        line-height: 1.5em;
+        font-family: 'Helvetica';
+        margin: auto;
+      }
+      .tools-list {
+        display: inline-block;
+        margin:auto;
+        li {
+          font-size: 110%;
+          text-align: left;
+          font-family: 'roboto';
+        }
       }
     }
-    .project-box {
-      width: 20rem;
-      height: 20rem;
+    .project-img {
+      display: block;
+      width: 400px;
+      height: auto;
+      float: right;
+    }
+
+    .project-buttons {
+      margin-top: 2em;
+      a {
+        font-family: 'roboto';
+        font-size: 90%;
+        display: inline-block;
+        color: white;
+        background: $main-color;
+        width: 5rem;
+        padding: .5em;
+        margin: 0 .5em 0 .5em;
+        transition: all .2s;
+        &:hover {
+          background: gold;
+          transform: translateY(-5px);
+          box-shadow: 0 5px 5px black;
+          color: black;
+        }
+      }
     }
   }
 }

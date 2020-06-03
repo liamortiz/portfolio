@@ -24,7 +24,7 @@ class Project extends Component {
                </p>
                <h4>Tools</h4>
                <ul className = "tools-list">
-                <li>React</li>
+                <li>Javascript + React</li>
                 <li>CSS + SASS</li>
                 <li>HTML5</li>
                </ul>

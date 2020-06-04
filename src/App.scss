@@ -8,12 +8,19 @@ a {
   font-family: "roboto";
   src : url("./fonts/Roboto-Regular.ttf")
 }
-$font-sizes : ("regular" : 100%, "medium" : 150%, "large" : 200%);
 
+$font-sizes : ("regular" : 100%, "medium" : 150%, "large" : 200%);
 $main-color: #0d0d0d;
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'roboto', 'Helvetica';
+}
+
+.swipe-left {
+  transform: translateX(-1000px);
+}
+.swipe-right {
+  transform: translateX(1000px);
 }
 
 // Navigation
@@ -95,6 +102,7 @@ header {
     margin: 5em auto;
 
     .project-box {
+      transition: all 2s;
       display: flex;
     }
 
@@ -114,8 +122,10 @@ header {
       }
       .tools-list {
         display: inline-block;
+        min-height: 150px;
         margin:auto;
         li {
+          margin: .5em 0;
           font-size: 110%;
           text-align: left;
           font-family: 'roboto';
@@ -125,7 +135,7 @@ header {
     .project-img {
       display: block;
       width: 400px;
-      height: auto;
+      height: 400px;
       float: right;
     }
 
@@ -144,7 +154,7 @@ header {
         &:hover {
           background: gold;
           transform: translateY(-5px);
-          box-shadow: 0 5px 5px black;
+          box-shadow: 0 5px 5px gray;
           color: black;
         }
       }

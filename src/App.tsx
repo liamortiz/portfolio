@@ -14,7 +14,7 @@ function App() {
         <p>Full Stack Web <span>Developer</span></p>
         <div className = "monitor-icon"></div>
       </header>
-
+            
       {/*Project Section */}
       <Projects />
 

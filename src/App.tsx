@@ -2,6 +2,7 @@ import React from 'react';
 import './App.scss';
 import Navigation from './components/Navigation';
 import Projects from './components/Projects';
+import Skills from './components/Skills';
 
 function App() {
   return (
@@ -9,15 +10,17 @@ function App() {
       <Navigation />
 
       {/*The main header*/}
-      <header>
+      <header id = "main-header">
         <h1>Leamsi Escribano</h1>
         <p>Full Stack Web <span>Developer</span></p>
         <div className = "monitor-icon"></div>
       </header>
-            
-      {/*Project Section */}
+
+      <h2>Projects</h2>
       <Projects />
 
+      <h2>Skills</h2>
+      <Skills />
     </div>
   );
 }

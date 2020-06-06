@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import project_data from '../data/projects.json';
 
+// TODO: Make this a gallery
+// TODO: Create an animation effect when switching between projects
+// TODO: Add buttons to the gallery
+
 // Project preview images here
 const IMAGES = [
   require("../images/dstpreview.png"),
@@ -36,8 +40,6 @@ class Project extends Component<{}, IState> {
     if (page < 0) page = 0
     if (page > project_data.length - 1) page = project_data.length - 1
 
-    // Animation effects
-
     this.setState({current_page : page})
 
   }
@@ -45,8 +47,6 @@ class Project extends Component<{}, IState> {
   render() {
     return (
       <div id = "project-section">
-        <h2>Projects</h2>
-
         <div className = "project-container">
           <div className = "project-box">
             <div className = "project-description">
@@ -70,8 +70,6 @@ class Project extends Component<{}, IState> {
             <img src = {IMAGES[this.state.current_page]} className = "project-img" alt = "Project Preview"/>
           </div>
         </div>
-        <button className = "left" onClick = {this.handleClick}>Left</button>
-        <button className = "right" onClick = {this.handleClick}>Right</button>
       </div>
     )
   }

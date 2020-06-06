@@ -13,6 +13,7 @@ const Skills : React.FC = () => {
         <li><img src = {require('../images/skills-icons/ruby_icon.svg')} /><span>Ruby</span></li>
         <li><img src = {require('../images/skills-icons/rails_icon.svg')} /><span>Rails</span></li>
         <li><img src = {require('../images/skills-icons/python_icon.svg')} /><span>Python</span></li>
+        <li><img src = {require('../images/skills-icons/git.svg')} /><span>Git</span></li>
       </ul>
     </div>
   )

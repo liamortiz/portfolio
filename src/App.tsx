@@ -3,6 +3,7 @@ import './App.scss';
 import Navigation from './components/Navigation';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -16,11 +17,16 @@ function App() {
         <div className = "monitor-icon"></div>
       </header>
 
-      <h2>Projects</h2>
+      <h2>self.projects</h2>
       <Projects />
 
-      <h2>Skills</h2>
+      <h2>self.skills</h2>
       <Skills />
+
+      <h2>self.whoami</h2>
+
+
+      <Footer/>
     </div>
   );
 }

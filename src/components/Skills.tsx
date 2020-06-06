@@ -7,8 +7,10 @@ const Skills : React.FC = () => {
         <li><img src = {require('../images/skills-icons/html5_icon.svg')} /><span>HTML</span></li>
         <li><img src = {require('../images/skills-icons/sass_icon.svg')} /><span>CSS/SASS</span></li>
         <li><img src = {require('../images/skills-icons/js_icon.svg')} /><span>Javascript</span></li>
+        <li><img src = {require('../images/skills-icons/typescript.svg')} /><span>Typescript</span></li>
         <li><img src = {require('../images/skills-icons/react_icon.svg')} /><span>React</span></li>
         <li><img src = {require('../images/skills-icons/node_icon.svg')} /><span>Node</span></li>
+        <li><img src = {require('../images/skills-icons/mongodb.png')} /><span>Mongodb</span></li>
 
         <li><img src = {require('../images/skills-icons/ruby_icon.svg')} /><span>Ruby</span></li>
         <li><img src = {require('../images/skills-icons/rails_icon.svg')} /><span>Rails</span></li>

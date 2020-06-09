@@ -4,6 +4,7 @@ import Navigation from './components/Navigation';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Footer from './components/Footer';
+import About from './components/About';
 
 function App() {
   return (
@@ -17,15 +18,14 @@ function App() {
         <div className = "monitor-icon"></div>
       </header>
 
-      <h2>self.projects</h2>
+      <h2>.projects</h2>
       <Projects />
 
-      <h2>self.skills</h2>
+      <h2>.skills</h2>
       <Skills />
 
-      <h2>self.whoami</h2>
-
-
+      <h2>.aboutme</h2>
+      <About />
       <Footer/>
     </div>
   );

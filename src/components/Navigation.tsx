@@ -13,7 +13,7 @@ const Navigation : React.FC = () => {
         <li><div onClick = {() => scroll(document.getElementById('project-section'))}>Projects</div><span></span></li>
         <li><div onClick = {() => scroll(document.getElementById('skills-section'))}>Skills</div><span></span></li>
         <li><div onClick = {() => scroll(document.getElementById('about-section'))}>About</div><span></span></li>
-        <li><div onClick = {() => scroll(document.getElementById('main-header'))}>Contact</div><span></span></li>
+        <li><div onClick = {() => scroll(document.getElementById('contact-section'))}>Contact</div><span></span></li>
       </ul>
     </nav>
   );

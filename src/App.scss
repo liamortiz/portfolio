@@ -201,6 +201,7 @@ header {
   }
   .description {
     margin: 2em auto;
+    margin-bottom: 5em;
     max-width: 700px;
     padding: 2em;
     padding-bottom: 3em;
@@ -213,6 +214,32 @@ header {
     text-align: left;
     line-height: 1.5em;
     font-family: 'roboto';
+  }
+}
+
+// Contact form
+form {
+  margin: 5em auto;
+  max-width: 50rem;
+  padding: 3em;
+  text-align: center;
+  input {
+    margin-left: 1em;
+    outline: none;
+    padding: .2em;
+    font-family: 'roboto', 'Helvetica';
+  }
+  textarea {
+    display: block;
+    margin: 2em auto;
+    width: 70%;
+    height: 15rem;
+    outline: none;
+    padding: 1em;
+    text-align: left;
+    line-height: 2em;
+    resize: none;
+    font-family: 'roboto', 'Helvetica';
   }
 }
 

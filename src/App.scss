@@ -201,7 +201,7 @@ header {
   }
   .description {
     margin: 2em auto;
-    margin-bottom: 5em;
+    margin-bottom: 8em;
     max-width: 700px;
     padding: 2em;
     padding-bottom: 3em;
@@ -218,16 +218,57 @@ header {
 }
 
 // Contact form
+#contact-section {
+  text-align: center;
+  p {
+    font-family: 'roboto', 'Helvetica';
+  }
+  .contact-container {
+    width: 10rem;
+    margin: 2em auto;
+  }
+  img {
+    display: inline-block;
+    margin: 0 1em 0 1em;
+    width: 3rem;
+    height: 3rem;
+    transition: all 1s;
+    &:hover {
+      transform: rotate(360deg);
+    }
+  }
+}
 form {
-  margin: 5em auto;
+  margin: 0 auto;
   max-width: 50rem;
   padding: 3em;
   text-align: center;
+  button {
+    font-family: 'roboto', 'Helvetica';
+    font-size: 90%;
+    display: inline-block;
+    color: white;
+    background: $main-color;
+    width: 5rem;
+    padding: .5em;
+    border: none;
+    transition: all .2s;
+    &:hover {
+      cursor: pointer;
+      background: gold;
+      transform: translateY(-5px);
+      box-shadow: 0 5px 5px gray;
+      color: black;
+    }
+  }
   input {
     margin-left: 1em;
     outline: none;
     padding: .2em;
     font-family: 'roboto', 'Helvetica';
+    &:focus {
+      outline: none;
+    }
   }
   textarea {
     display: block;
@@ -246,23 +287,12 @@ form {
 
 footer {
   color: white;
-  height: 5rem;
+  height: 1rem;
   padding: 1em;
   background: $main-color;
   text-align: center;
   p {
     font-family: 'roboto', 'Helvetica';
     font-size: 90%;
-  }
-  img {
-    display: block;
-    margin: auto;
-    margin-bottom: 1em;
-    width: 3rem;
-    height: 3rem;
-    transition: all 1s;
-    &:hover {
-      transform: rotate(360deg);
-    }
   }
 }

@@ -2,18 +2,23 @@ import React from 'react';
 
 const Navigation : React.FC = () => {
 
-  function scroll(element : any) : void {
+  function scroll(event : any, element : any) : void {
+    // Remove current active link
+    document.getElementsByClassName("active")[0].classList.remove("active");
+    // Update active link
+    event.target.classList.add("active");
+    // Scroll
     element.scrollIntoView({behavior : 'smooth', block : 'end'});
   }
 
   return (
     <nav>
       <ul>
-        <li><div className = "active" onClick = {() => scroll(document.getElementById('main-header'))}>Home</div><span></span></li>
-        <li><div onClick = {() => scroll(document.getElementById('project-section'))}>Projects</div><span></span></li>
-        <li><div onClick = {() => scroll(document.getElementById('skills-section'))}>Skills</div><span></span></li>
-        <li><div onClick = {() => scroll(document.getElementById('about-section'))}>About</div><span></span></li>
-        <li><div onClick = {() => scroll(document.getElementById('contact-section'))}>Contact</div><span></span></li>
+        <li><div className = "active" onClick = {(e) => scroll(e, document.getElementById('main-header'))}>Home</div><span></span></li>
+        <li><div onClick = {(e) => scroll(e, document.getElementById('project-section'))}>Projects</div><span></span></li>
+        <li><div onClick = {(e) => scroll(e, document.getElementById('skills-section'))}>Skills</div><span></span></li>
+        <li><div onClick = {(e) => scroll(e, document.getElementById('about-section'))}>About</div><span></span></li>
+        <li><div onClick = {(e) => scroll(e, document.getElementById('contact-section'))}>Contact</div><span></span></li>
       </ul>
     </nav>
   );

@@ -62,8 +62,8 @@ class Project extends Component<{}, IState> {
               </ul>
 
               <div className = "project-buttons">
-                <a href = {project_data[this.state.current_page].demo_href}>Demo</a>
-                <a href = {project_data[this.state.current_page].code_href}>Code</a>
+                <a target = "_blank" rel="noopener noreferrer" href = {project_data[this.state.current_page].demo_href}>Demo</a>
+                <a target = "_blank" rel="noopener noreferrer" href = {project_data[this.state.current_page].code_href}>Code</a>
               </div>
 
             </div>

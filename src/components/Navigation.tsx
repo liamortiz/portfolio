@@ -8,7 +8,7 @@ const Navigation : React.FC = () => {
     // Update active link
     event.target.classList.add("active");
     // Scroll
-    element.scrollIntoView({behavior : 'smooth', block : 'end'});
+    element.scrollIntoView({behavior : 'smooth', block : 'start'});
   }
 
   return (

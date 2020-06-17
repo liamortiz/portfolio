@@ -16,7 +16,8 @@ function App() {
       <header id = "main-header">
         <h1>Leamsi Escribano</h1>
         <p>Full Stack Web <span>Developer</span></p>
-        <div className = "monitor-icon"></div>
+        <div className = "intro-icon"></div>
+        <small>Saving the world one byte at a time!</small>
       </header>
 
       <h2>.projects</h2>
@@ -30,7 +31,7 @@ function App() {
 
       <h2>.contact</h2>
       <Contact/>
-      
+
       <Footer/>
     </div>
   );

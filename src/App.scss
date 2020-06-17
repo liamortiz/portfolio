@@ -73,11 +73,11 @@ header {
   font-family: 'roboto';
   font-size: 150%;
   height: 30rem;
-  .monitor-icon {
+  .intro-icon {
     height: 100px;
     width: 100%;
     display: inline-block;
-    background-image: url("./images/monitor.svg");
+    background-image: url("./images/programmer.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -91,6 +91,9 @@ header {
     font-weight: bold;
     span {color: gold;}
   }
+  small {
+    font-size: 60%;
+  }
 }
 // Project Section
 #project-section {
@@ -98,48 +101,56 @@ header {
   margin-bottom: 12em;
 
   .project-container {
+    max-width: 70%;
+    padding: 1em;
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 5em auto;
-
-    .project-box {
-      transition: all 2s;
-      display: flex;
-    }
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 
     .project-description {
-      max-width: 35rem;
       h3, h4 {
         font-size: 150%;
         font-weight: lighter;
         margin: 1em 0;
       }
       p {
-        max-width: 80%;
+        max-width: 50%;
         text-align: left;
         line-height: 1.5em;
         font-family: 'Helvetica';
-        margin: auto;
+        margin: 2em auto;
       }
       .tools-list {
         display: inline-block;
-        min-height: 150px;
-        margin:auto;
+        margin: 0 auto;
         li {
-          margin: .5em 0;
-          font-size: 110%;
-          text-align: left;
+          float: left;
+          list-style: none;
+          color: white;
+          padding: .5em;
+          border-radius: 10px;
+          background: #69cdff;
+          text-align: center;
+          margin: 0 .2em 0 .2em;
           font-family: 'roboto';
+          font-size: 80%;
+          // Random colors
+          $colors: #69cdff, #ff4d67, #c073ff, #c7bd00, orange;
+          @for $i from 1 through 5 {
+            &:nth-child(#{length($colors)}n+#{$i}) {
+              background: lighten(nth($colors, $i), 1%);
+            }
+          }
         }
       }
     }
     .project-img {
       display: block;
-      width: 400px;
-      height: 400px;
-      float: right;
+      width: 500px;
+      height: 500px;
     }
     .project-buttons {
       margin-top: 2em;
@@ -196,7 +207,6 @@ header {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-image: url('./images/me.jpg');
   }
   .description {
@@ -207,8 +217,6 @@ header {
     padding-bottom: 3em;
     background: $main-color;
     color: white;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 10%;
   }
   p {
     text-align: left;

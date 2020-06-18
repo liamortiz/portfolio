@@ -1,7 +1,4 @@
 # Web Portfolio
-
-Demo https://liamortiz.github.io/portfolio/
-
 ## Tools
 <ul>
   <li>React</li>

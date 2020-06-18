@@ -199,14 +199,12 @@ header {
   }
 }
 #about-section {
-  .parallax {
-    width: 600px;
+  .hero {
+    width: 500px;
     height: 500px;
-    margin: 2em auto;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url('./images/me.jpg');
+    margin: 4em auto;
+    border-radius: 100%;
+    background-image: url("./images/me-mobile.jpg");
   }
   .description {
     margin: 2em auto;
@@ -231,14 +229,29 @@ header {
     font-family: 'roboto', 'Helvetica';
   }
   .contact-container {
-    width: 10rem;
-    margin: 2em auto;
+    margin: auto;
+    margin-bottom: 2em;
+    p {
+      display: block;
+      width: 200px;
+      margin: auto;
+      border-bottom: 1px solid black;
+      font-family: 'roboto';
+      font-size: 150%;
+      font-weight: 200;
+      margin-bottom: 1em;
+    }
   }
-  img {
+  .email-icon {
+    width: 5rem;
+    height: 5rem;
+    padding-top: 1em;
+  }
+  .social-images {
     display: inline-block;
     margin: 0 1em 0 1em;
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     transition: all 1s;
     &:hover {
       transform: rotate(360deg);
@@ -246,8 +259,9 @@ header {
   }
 }
 form {
+  width: 60%;
   margin: 0 auto;
-  max-width: 50rem;
+  max-width: 35rem;
   padding: 3em;
   text-align: center;
   button {
@@ -269,18 +283,28 @@ form {
     }
   }
   input {
-    margin-left: 1em;
+    width: 100%;
+    display: block;
+    margin: .5em auto;
     outline: none;
-    padding: .2em;
+    padding: .7em;
+    border-radius: 5px;
+    color: gray;
+    border: 1px solid rgba(0, 0, 0, 0.5);
     font-family: 'roboto', 'Helvetica';
     &:focus {
       outline: none;
     }
+    &:first-child {
+      margin-top: -2em;
+    }
   }
   textarea {
     display: block;
-    margin: 2em auto;
-    width: 70%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    margin-bottom: 2em;
+    width: 100%;
     height: 15rem;
     outline: none;
     padding: 1em;

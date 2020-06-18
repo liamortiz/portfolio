@@ -3,7 +3,7 @@ import React from 'react';
 const About : React.FC = () => {
   return (
     <div id = "about-section">
-      <div className = "parallax"></div>
+      <div className = "hero"></div>
       <div className = "description">
         <p>
         Proin odio est, mattis a velit eget, condimentum cursus purus. Nam sagittis sapien vel turpis sagittis,

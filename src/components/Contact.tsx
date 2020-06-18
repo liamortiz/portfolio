@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import linkedin_logo from '../images/linkedin.svg';
 import github_logo from '../images/github-logo.svg';
+import email_icon from '../images/email.svg';
 
 interface IContact {
   value : string
@@ -15,6 +16,10 @@ class Contact extends Component<{}, IContact> {
     }
   }
 
+  handleInputClick= (event : any) => {
+    event.target.value = "";
+  }
+
   handleSubmit = (event : any) => {
     event.preventDefault();
   }
@@ -22,21 +27,21 @@ class Contact extends Component<{}, IContact> {
   render() {
     return (
       <div id = "contact-section">
-        <div className = "contact-container">
-          <a target = "_blank" rel="noopener noreferrer" href = "index.html"><img alt = "linkedin" src = {linkedin_logo}/></a>
-          <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/liamortiz"><img alt = "github" src = {github_logo}/></a>
-        </div>
-        <p>leamsii.e@gmail.com</p>
-        <form id = "contact-section" onSubmit = {this.handleSubmit}>
-          <label>Email</label>
-          <input type = "email" name = "email" id = "email-input" />
-
+        <img className = "email-icon" src = {email_icon} alt = "send email"/>
+        <form onSubmit = {this.handleSubmit}>
+          <input onClick = {this.handleInputClick} value = "Name" type = "text" name = "name" id = "name-input" />
+          <input onClick = {this.handleInputClick} value = "Email address" type = "email" name = "email" id = "email-input" />
+          <input onClick = {this.handleInputClick} value = "Subject" type = "text" name = "subject" id = "subject-input" />
           <textarea>
           </textarea>
 
-          <button type = "submit">Submit</button>
-
+          <button type = "submit">Send</button>
         </form>
+        <div className = "contact-container">
+          <p>I'm Also On</p>
+          <a target = "_blank" rel="noopener noreferrer" href = "index.html"><img className = "social-images" alt = "linkedin" src = {linkedin_logo}/></a>
+          <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/liamortiz"><img className = "social-images" alt = "github" src = {github_logo}/></a>
+        </div>
       </div>
     )
   }

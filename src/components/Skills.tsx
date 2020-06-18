@@ -9,8 +9,8 @@ const Skills : React.FC = () => {
         <li><img src = {require('../images/skills-icons/js_icon.svg')} alt = "Javascript"/><span>Javascript</span></li>
         <li><img src = {require('../images/skills-icons/typescript.svg')} alt = "Typescript"/><span>Typescript</span></li>
         <li><img src = {require('../images/skills-icons/react_icon.svg')} alt = "React"/><span>React</span></li>
-        <li><img src = {require('../images/skills-icons/node_icon.svg')} alt = "Node"/><span>Node</span></li>
         <li><img src = {require('../images/skills-icons/mongodb.png')} alt = "Mongodb"/><span>Mongodb</span></li>
+        <li><img src = {require('../images/skills-icons/sql.svg')} alt = "SQL"/><span>SQL</span></li>
 
         <li><img src = {require('../images/skills-icons/ruby_icon.svg')} alt = "Ruby"/><span>Ruby</span></li>
         <li><img src = {require('../images/skills-icons/rails_icon.svg')} alt = "Rails"/><span>Rails</span></li>

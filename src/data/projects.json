@@ -10,7 +10,7 @@
     "title" : "Spotify CLI Program",
     "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia, felis id pellentesque vestibulum, ipsum lorem tincidunt lacus, nec interdum felis sem vitae ex. Vestibulum tempus eros sit amet urna tempor, ac sollicitudin metus interdum. Aenean scelerisque gravida fringilla.",
     "tools" : ["Ruby", "SQLite", "Spotify API", "Active Record"],
-    "demo_href" : "https://github.com/liamortiz/spotify-cli-program",
+    "demo_href" : "",
     "code_href" : "https://github.com/liamortiz/spotify-cli-program"
   }
 ]

@@ -48,8 +48,13 @@ class Project extends Component {
               </div>
 
               <div className = "project-buttons">
-                <a target = "_blank" rel="noopener noreferrer" href = {project.code_href}>Code</a>
-                <a target = "_blank" rel="noopener noreferrer" href = {project.demo_href}>Demo</a>
+                <a
+                  target = "_blank"
+                  rel="noopener noreferrer"
+                  href = {project.code_href}>Code</a>
+                {
+                  project.demo_href && <a target = "_blank" rel="noopener noreferrer" href = {project.demo_href}>Demo</a>
+                }
               </div>
               </div>
             )

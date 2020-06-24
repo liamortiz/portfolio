@@ -3,9 +3,13 @@ import './App.scss';
 import Navigation from './components/Navigation';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
-import Footer from './components/Footer';
 import About from './components/About';
 import Contact from './components/Contact';
+
+// TODO: send email
+// TODO: Email validation
+// TODO: Not a bot security check
+// TODO: Auto Change active links when scrolling
 
 function App() {
   return (
@@ -32,7 +36,9 @@ function App() {
       <h2>.contact</h2>
       <Contact/>
 
-      <Footer/>
+      <footer>
+        <p>Thank you for viewing my portfolio</p>
+      </footer>
     </div>
   );
 }

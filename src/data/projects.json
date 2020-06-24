@@ -1,16 +1,23 @@
 [
   {
     "title" : "Recipe Look Up",
-    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia, felis id pellentesque vestibulum, ipsum lorem tincidunt lacus, nec interdum felis sem vitae ex. Vestibulum tempus eros sit amet urna tempor, ac sollicitudin metus interdum. Aenean scelerisque gravida fringilla.",
-    "tools" : ["Javascript", "React", "S(CSS)", "HTML5", "JSON"],
+    "description" : "Recipe Look Up was made for a game called 'Dont Starve' by 'Klei Entertainment'. I wanted to provide users a way to quickly look up food recipes while in game. One feature I'm very happy about is real time search results. It allows for searching dish recipes in real time.",
+    "tools" : ["React", "S(CSS)", "HTML5", "JSON"],
     "demo_href" : "https://liamortiz.github.io/dst-quicklookup/",
     "code_href" : "https://github.com/liamortiz/dst-quicklookup"
   },
   {
     "title" : "Spotify CLI Program",
-    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia, felis id pellentesque vestibulum, ipsum lorem tincidunt lacus, nec interdum felis sem vitae ex. Vestibulum tempus eros sit amet urna tempor, ac sollicitudin metus interdum. Aenean scelerisque gravida fringilla.",
+    "description" : "This is a small CLI Program using the Spotify API. The user is able to login or create an account, create playlist and add songs to their playlist. They're able to backup the playlist to a database and every song gets pulled from the API into the database.",
     "tools" : ["Ruby", "SQLite", "Spotify API", "Active Record"],
     "demo_href" : "",
     "code_href" : "https://github.com/liamortiz/spotify-cli-program"
+  },
+  {
+    "title" : "My Portfolio",
+    "description" : "I made this during my time at Flatiron school on the side while also working on school assignments. I wanted to provide a way for future recruiters to efficiently view my project history, skills, and some information about me.",
+    "tools" : ["Typescript", "React", "S(CSS)", "HTML5", "JSON"],
+    "demo_href" : "",
+    "code_href" : "https://github.com/liamortiz/portfolio"
   }
 ]

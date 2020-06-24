@@ -8,6 +8,12 @@ a {
   width: 100%;
 }
 
+@keyframes hover {
+  to {
+    transform: translateY(10px);
+  }
+}
+
 @font-face {
   font-family: "roboto";
   src : url("./fonts/Roboto-Regular.ttf")
@@ -40,6 +46,7 @@ nav {
   padding: 1em;
   position: fixed;
   font-family: 'roboto';
+  z-index: 9;
 
   .active {
     color: gold;
@@ -105,8 +112,13 @@ header {
   text-align: center;
   margin-bottom: 12em;
 
+  .hidden {
+    transition: all .2s;
+    display: none;
+  }
   .project-container {
-    max-width: 70%;
+    width: 70%;
+    max-width: 60rem;
     padding: 1em;
     display: flex;
     justify-content: center;
@@ -115,12 +127,59 @@ header {
     margin: 5em auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 
-    .project-description {
-      h3, h4 {
-        font-size: 150%;
-        font-weight: lighter;
-        margin: 1em 0;
+    button {
+      width: 2.5rem;
+      padding-right: 2em;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      border: none;
+      background-color: white;
+      background-image: url('./images/arrow.svg');
+      animation-name: hover;
+      animation-duration: .5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate;
+      &:focus, &:active {
+        outline: 0;
       }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    h3, h4 {
+      width: 100%;
+      font-size: 150%;
+      font-weight: lighter;
+      margin: 1em 0;
+    }
+
+    .tools-list {
+      display: inline-block;
+      margin: 1em auto;
+      li {
+        float: left;
+        list-style: none;
+        color: white;
+        padding: .5em;
+        border-radius: 10px;
+        background: #69cdff;
+        text-align: center;
+        margin: 0 .2em 0 .2em;
+        font-family: 'roboto';
+        font-size: 80%;
+        // Random colors
+        $colors: #69cdff, #ff4d67, #c073ff, #c7bd00, orange;
+        @for $i from 1 through 5 {
+          &:nth-child(#{length($colors)}n+#{$i}) {
+            background: lighten(nth($colors, $i), 1%);
+          }
+        }
+      }
+    }
+    .project-description {
       p {
         max-width: 50%;
         text-align: left;
@@ -128,31 +187,9 @@ header {
         font-family: 'Helvetica';
         margin: 2em auto;
       }
-      .tools-list {
-        display: inline-block;
-        margin: 0 auto;
-        li {
-          float: left;
-          list-style: none;
-          color: white;
-          padding: .5em;
-          border-radius: 10px;
-          background: #69cdff;
-          text-align: center;
-          margin: 0 .2em 0 .2em;
-          font-family: 'roboto';
-          font-size: 80%;
-          // Random colors
-          $colors: #69cdff, #ff4d67, #c073ff, #c7bd00, orange;
-          @for $i from 1 through 5 {
-            &:nth-child(#{length($colors)}n+#{$i}) {
-              background: lighten(nth($colors, $i), 1%);
-            }
-          }
-        }
-      }
     }
     .project-img {
+      margin: auto;
       display: block;
       width: 100%;
       max-width: 500px;
@@ -212,6 +249,9 @@ header {
   }
 }
 #about-section {
+  a {
+    color: gold;
+  }
   .about-container {
     margin: auto;
     max-width: 700px;
@@ -231,6 +271,7 @@ header {
     color: white;
   }
   p {
+    margin: 1em 0;
     text-align: left;
     line-height: 1.5em;
     font-family: 'roboto';

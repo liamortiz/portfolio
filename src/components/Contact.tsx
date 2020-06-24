@@ -39,7 +39,7 @@ class Contact extends Component<{}, IContact> {
         </form>
         <div className = "contact-container">
           <p>I'm Also On</p>
-          <a target = "_blank" rel="noopener noreferrer" href = "index.html"><img className = "social-images" alt = "linkedin" src = {linkedin_logo}/></a>
+          <a target = "_blank" rel="noopener noreferrer" href = "https://linkedin.com/in/leamsi-escribano-b1b642197/"><img className = "social-images" alt = "linkedin" src = {linkedin_logo}/></a>
           <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/liamortiz"><img className = "social-images" alt = "github" src = {github_logo}/></a>
         </div>
       </div>

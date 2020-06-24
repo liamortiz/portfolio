@@ -5,7 +5,7 @@ import project_data from '../data/projects.json';
 const IMAGES = [
   require("../images/dstpreview.png"),
   require("../images/spotify_demo.png"),
-  require("../images/portfolio.png")
+  require('../images/portfolio.PNG')
 ]
 
 // Project Interface from JSON file

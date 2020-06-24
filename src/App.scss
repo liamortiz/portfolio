@@ -195,7 +195,7 @@ header {
       max-width: 500px;
     }
     .project-buttons {
-      margin-top: 2em;
+      margin: 2em 0;
       .disabled {
         opacity: 0.2;
         &:hover {
@@ -249,32 +249,48 @@ header {
   }
 }
 #about-section {
+  h3 {
+    text-align: center;
+  }
   a {
+    font-weight: lighter;
     color: gold;
+    opacity: 0.7;
+    &:hover {
+      opacity: 1;
+    }
   }
   .about-container {
-    margin: auto;
-    max-width: 700px;
+    margin: 5em auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
   }
   .hero {
-    height: 500px;
-    margin-top: 3em;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("./images/me-mobile.jpg");
+    background-image: url("./images/hero.jpg");
+  }
+  .image-container {
+    flex: 1;
+    background: red;
   }
   .description {
-    margin: auto;
-    margin-bottom: 8em;
+    flex: 1;
     padding: 2em;
     background: $main-color;
     color: white;
+    span {
+      background: gold;
+      color: black;
+    }
   }
   p {
     margin: 1em 0;
     text-align: left;
-    line-height: 1.5em;
-    font-family: 'roboto';
+    line-height: 1.6em;
+    font-family: 'roboto', 'Helvetica';
   }
 }
 

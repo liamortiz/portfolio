@@ -15,7 +15,7 @@
   },
   {
     "title" : "My Portfolio",
-    "description" : "I made this during my time at Flatiron school on the side while also working on school assignments. I wanted to provide a way for future recruiters to efficiently view my project history, skills, and some information about me.",
+    "description" : "I made this during my time at Flatiron School on the side while also working on school assignments. I wanted to provide a way for future recruiters to efficiently view my project history, skills, and some information about me.",
     "tools" : ["Typescript", "React", "S(CSS)", "HTML5", "JSON"],
     "demo_href" : "",
     "code_href" : "https://github.com/liamortiz/portfolio"

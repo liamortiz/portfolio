@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import Recaptcha from 'react-recaptcha';
 
 import linkedin_logo from '../images/linkedin.svg';
 import github_logo from '../images/github-logo.svg';
 
 interface IContact {
+  verified : boolean,
   value : string
 }
 
@@ -11,12 +13,20 @@ class Contact extends Component<{}, IContact> {
   constructor(props : any) {
     super(props);
     this.state = {
-      value : ""
+      value : "",
+      verified : false
     }
   }
-
   handleSubmit = (event : any) => {
     event.preventDefault();
+  }
+
+  onResolved = () => {
+    console.log("Good.");
+  }
+
+  captchaLoaded = () => {
+    console.log("Captcha Loaded..");
   }
 
   render() {
@@ -36,6 +46,13 @@ class Contact extends Component<{}, IContact> {
 
           <button type = "submit">Send</button>
         </form>
+
+        <Recaptcha sitekey="6Ld6I6kZAAAAAEh3px45xEfdDi0_oywyRq6ShpFH"
+        render="explicit"
+        onResolved = {this.onResolved}
+        onloadCallback={this.captchaLoaded}
+
+        />
 
       </div>
     )

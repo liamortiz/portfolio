@@ -10,6 +10,8 @@ import Contact from './components/Contact';
 // TODO: Email validation
 // TODO: Not a bot security check
 // TODO: Auto Change active links when scrolling
+// TODO: Fix Recaptcha
+// TODO: Check cross browser compatibility
 
 function App() {
   return (
@@ -44,24 +46,3 @@ function App() {
 }
 
 export default App;
-
-/*
-Portfolio Specs-----------
-SVG Icons !
-Cool effects
-Minimal
-Fast
-Lite colors
-
-
-Pages ---
-Home -> Top of page.
-Projects -> Contains at least 4 projects with demo and code links
-Skills -> Contains tools and languages
-About -> Short description of your journey
-Contact -> Github account Email Phone and LinkedIn
-
--> The intro page should contain the Navigation,
-Your full name, job title,
-
-*/

@@ -26,22 +26,28 @@ class Project extends Component {
   }
 
   expand_project = (event : any) : void => {
-
-    let parent;
-    let button_element : any | null = document.getElementById(event.target.id);
-
     // Get the parent node of the button
-    parent = button_element.parentNode;
-    // Toggle the hidden class
-    let unk = parent.children[1].classList.toggle("hidden")
+    let button_element : any | null = document.getElementById(event.target.id);
+    let parent = button_element.parentNode;
+    parent = parent.children[1];
+
+    let is_hidden = parent.classList.contains("hidden");
+
+    // Handle animations
+    if (is_hidden) {
+      parent.setAttribute("style", "max-height: 900px");
+    } else {
+      parent.setAttribute("style", "max-height: 0");
+    }
+    parent.classList.toggle("hidden");
+
     // Arrow animation
-    let alter_animation = unk ? "animation: .5s ease-in-out infinite alternate hover" : "animation: none";
-    let alter_direction = unk ? "transform: rotate(0)" : "transform: rotate(180deg); animation: none";
+    let alter_animation = !is_hidden ? "animation: .5s ease-in-out infinite alternate hover" : "animation: none";
+    let alter_direction = !is_hidden ? "transform: rotate(0)" : "transform: rotate(180deg); animation: none";
     //button_element.style.transform = transform;
     button_element.setAttribute("style", alter_animation);
     button_element.setAttribute("style", alter_direction);
   }
-
   // Get a list of tools from json data
   get_tools(project : IProjectObject) {
     return (
@@ -52,7 +58,6 @@ class Project extends Component {
       })
     );
   }
-
   render() {
     return (
       <div id = "project-section">

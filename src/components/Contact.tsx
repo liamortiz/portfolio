@@ -51,7 +51,6 @@ class Contact extends Component<{}, IContact> {
         render="explicit"
         onResolved = {this.onResolved}
         onloadCallback={this.captchaLoaded}
-
         />
 
       </div>

@@ -124,8 +124,11 @@ header {
   margin-bottom: 12em;
 
   .hidden {
-    transition: all .2s;
-    display: none;
+    max-height: 0;
+  }
+  .project-details {
+    overflow: hidden;
+    transition: max-height 1s;
   }
   .project-container {
     width: 70%;

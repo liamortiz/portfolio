@@ -4,6 +4,12 @@ a {
   color: black;
 }
 
+.recaptcha {
+  display: inline-block;
+  margin-top: -.5em;
+  margin-bottom: 3em;
+}
+
 // Change placeholder text for input fields
 ::placeholder {
   color: gray;
@@ -312,6 +318,20 @@ header {
 // Contact form
 #contact-section {
   text-align: center;
+  #notice {
+    width: 50%;
+    min-width: 200px;
+    margin: auto;
+    padding: 1em;
+    font-size: 120%;
+    color: white;
+    opacity: 0;
+    transition: opacity .2s;
+    background: white;
+  }
+  .error {background: #e81e25 !important; opacity: 1 !important;}
+  .success {background: #1ee886 !important; opacity: 1 !important;}
+
   .contact-container {
     margin: auto;
     margin-bottom: 2em;

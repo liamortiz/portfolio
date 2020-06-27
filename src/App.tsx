@@ -39,7 +39,7 @@ function App() {
       <Contact/>
 
       <footer>
-        <p>Thank you for viewing my portfolio</p>
+        <p>Thank you for viewing my portfolio!</p>
       </footer>
     </div>
   );

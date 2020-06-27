@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.ba6645e5.chunk.css",
+    "main.js": "/portfolio/static/js/main.c207d8e3.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.c207d8e3.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.fb1b3dac.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.fb1b3dac.js.map",
+    "static/js/2.bc221be9.chunk.js": "/portfolio/static/js/2.bc221be9.chunk.js",
+    "static/js/2.bc221be9.chunk.js.map": "/portfolio/static/js/2.bc221be9.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.c9ef8cd5b0477755e519068ab589613f.js": "/portfolio/precache-manifest.c9ef8cd5b0477755e519068ab589613f.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.ba6645e5.chunk.css.map": "/portfolio/static/css/main.ba6645e5.chunk.css.map",
+    "static/js/2.bc221be9.chunk.js.LICENSE.txt": "/portfolio/static/js/2.bc221be9.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/portfolio/static/media/programmer.ab4b1a31.svg",
+    "static/media/dstpreview.png": "/portfolio/static/media/dstpreview.2c90e9e7.png",
+    "static/media/git.svg": "/portfolio/static/media/git.a53c5d77.svg",
+    "static/media/github-logo.svg": "/portfolio/static/media/github-logo.192a6620.svg",
+    "static/media/html5_icon.svg": "/portfolio/static/media/html5_icon.9b574ac5.svg",
+    "static/media/js_icon.svg": "/portfolio/static/media/js_icon.684127fb.svg",
+    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.9e36c8fd.svg",
+    "static/media/portfolio.PNG": "/portfolio/static/media/portfolio.44a823e3.PNG",
+    "static/media/python_icon.svg": "/portfolio/static/media/python_icon.f929fcc3.svg",
+    "static/media/rails_icon.svg": "/portfolio/static/media/rails_icon.bcb113b9.svg",
+    "static/media/react_icon.svg": "/portfolio/static/media/react_icon.5f0931d4.svg",
+    "static/media/ruby_icon.svg": "/portfolio/static/media/ruby_icon.84d18de4.svg",
+    "static/media/sass_icon.svg": "/portfolio/static/media/sass_icon.4e3c2a4c.svg",
+    "static/media/spotify_demo.png": "/portfolio/static/media/spotify_demo.21cf297f.png",
+    "static/media/sql.svg": "/portfolio/static/media/sql.8fbc017c.svg",
+    "static/media/typescript.svg": "/portfolio/static/media/typescript.2dcf8108.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fb1b3dac.js",
+    "static/js/2.bc221be9.chunk.js",
+    "static/css/main.ba6645e5.chunk.css",
+    "static/js/main.c207d8e3.chunk.js"
+  ]
+}

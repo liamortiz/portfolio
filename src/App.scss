@@ -25,12 +25,6 @@ input:-webkit-autofill:active  {
   width: 100%;
 }
 
-@keyframes hover {
-  to {
-    transform: translateY(10px);
-  }
-}
-
 @font-face {
   font-family: "roboto";
   src : url("./fonts/Roboto-Regular.ttf")
@@ -129,13 +123,6 @@ header {
   text-align: center;
   margin-bottom: 12em;
 
-  .hidden {
-    max-height: 0;
-  }
-  .project-details {
-    overflow: hidden;
-    transition: max-height 1s;
-  }
   .project-container {
     width: 70%;
     max-width: 60rem;
@@ -146,30 +133,6 @@ header {
     flex-wrap: wrap;
     margin: 5em auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-
-    button {
-      width: 2.5rem;
-      height: 2.5rem;
-      margin: .3em auto;
-      padding-right: 2em;
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-      border: none;
-      background-color: white;
-      background-image: url('./images/arrow.svg');
-      animation-name: hover;
-      animation-duration: .5s;
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
-      animation-direction: alternate;
-      &:focus, &:active {
-        outline: 0;
-      }
-      &:hover {
-        cursor: pointer;
-      }
-    }
 
     h3, h4 {
       width: 100%;
@@ -192,7 +155,7 @@ header {
         font-family: 'roboto';
         font-size: 80%;
         // Random colors
-        $colors: #69cdff, #ff4d67, #c073ff, #c7bd00, orange;
+        $colors: #3696eb, #ff4d67, #c073ff, #c7bd00, orange;
         @for $i from 1 through 5 {
           &:nth-child(#{length($colors)}n+#{$i}) {
             background: lighten(nth($colors, $i), 1%);
@@ -325,12 +288,11 @@ header {
     padding: 1em;
     font-size: 120%;
     color: white;
-    opacity: 0;
-    transition: opacity .2s;
+    display: none;
     background: white;
   }
-  .error {background: #e81e25 !important; opacity: 1 !important;}
-  .success {background: #1ee886 !important; opacity: 1 !important;}
+  .error {background: #e81e25 !important;}
+  .success {background: #1ee886 !important;}
 
   .contact-container {
     margin: auto;

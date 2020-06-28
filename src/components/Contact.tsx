@@ -33,7 +33,9 @@ class Contact extends Component<{}, IContact> {
 
   handleSentEmail(status_code : string) : void {
     let notice_elm : any | null = document.getElementById("notice");
+    notice_elm.setAttribute("style", "display: inline-block");
     if (status_code === "OK") {
+      notice_elm.innerHTML = "Email Sent!";
       notice_elm.classList.add("success");
     } else {
       notice_elm.classList.add("error");
@@ -81,7 +83,7 @@ class Contact extends Component<{}, IContact> {
         </form>
 
         <div className = "recaptcha">
-          <Recaptcha sitekey="6Leu_qkZAAAAAHgkaNu32Q8HNUkACHacwG6pTpBb"
+          <Recaptcha sitekey="6LdcA6oZAAAAAIEoz5BWgM6RTysCy0eiJ63Psu52"
           render="explicit"
           theme = "dark"
           verifyCallback = {this.onVerify}

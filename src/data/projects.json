@@ -7,6 +7,13 @@
     "code_href" : "https://github.com/liamortiz/dst-quicklookup"
   },
   {
+    "title" : "3D Model Extractor",
+    "description" : "I built this for the modding community. It essentially scrapes asset data for a Donkey Kong game and decompresses/re-arranges it into 3D Models. It was entirely made with Python with a strong understanding of how to handle raw binary data.",
+    "tools" : ["Python"],
+    "demo_href" : "",
+    "code_href" : "https://github.com/leamsii/DK-Tropical-Freeze-Model-Extractor"
+  },
+  {
     "title" : "Spotify CLI Program",
     "description" : "This is a small CLI Program using the Spotify API. The user is able to login or create an account, create playlist and add songs to their playlist. They're able to backup the playlist to a database and every song gets pulled from the API into the database.",
     "tools" : ["Ruby", "SQLite", "Spotify API", "Active Record"],

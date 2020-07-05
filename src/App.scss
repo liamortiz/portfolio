@@ -59,6 +59,29 @@ nav {
   font-family: 'roboto';
   z-index: 9;
 
+  .hidden {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: none;
+    float: left;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: url('./images/nav.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $main-color;
+    border: none;
+    &:hover {
+      cursor: pointer;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
   .active {
     color: gold;
     & + span {width: 100%;}
@@ -298,6 +321,7 @@ header {
     margin: auto;
     margin-bottom: 2em;
     p {
+      padding: .5em;
       display: block;
       max-width: 650px;
       line-height: 1.5em;
@@ -386,5 +410,38 @@ footer {
     font-family: 'roboto', 'Helvetica';
     font-size: 90%;
     line-height: 3em;
+  }
+}
+
+// Media queries
+@media screen and (max-width: 500px) {
+  nav {
+    .mobile-nav {
+      display: block;
+    }
+    ul {
+      max-height: 1000px;
+      text-align: center;
+      li {
+        width: 30%;
+        margin: .5em auto;
+        float:none;
+      }
+    }
+  }
+  .tools-list {
+    li {
+      float: none;
+      display: block !important;
+      margin: .2em .2em !important;
+    }
+  }
+}
+
+@media screen and (min-width: 501px) {
+  nav {
+    ul {
+      display: block;
+    }
   }
 }

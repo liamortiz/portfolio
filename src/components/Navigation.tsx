@@ -1,5 +1,4 @@
 import React from 'react';
-
 const Navigation : React.FC = () => {
 
   function scroll(event : any, element : any) : void {
@@ -11,9 +10,17 @@ const Navigation : React.FC = () => {
     element.scrollIntoView({behavior : 'smooth', block : 'start'});
   }
 
+  function expandNav(event : any) : void {
+    let nav = document.getElementById("navbar");
+    if (nav) {
+      nav.classList.toggle("hidden");
+    }
+  }
+
   return (
     <nav>
-      <ul>
+      <button className = "mobile-nav" onClick = {(e) => expandNav(e)}></button>
+      <ul id = "navbar">
         <li><div className = "active" onClick = {(e) => scroll(e, document.getElementById('main-header'))}>Home</div><span></span></li>
         <li><div onClick = {(e) => scroll(e, document.getElementById('project-section'))}>Projects</div><span></span></li>
         <li><div onClick = {(e) => scroll(e, document.getElementById('skills-section'))}>Skills</div><span></span></li>

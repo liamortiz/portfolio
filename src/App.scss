@@ -60,7 +60,7 @@ nav {
   z-index: 9;
 
   .hidden {
-    display: none;
+    display: block;
   }
 
   .mobile-nav {
@@ -420,7 +420,7 @@ footer {
       display: block;
     }
     ul {
-      max-height: 1000px;
+      display: none;
       text-align: center;
       li {
         width: 30%;

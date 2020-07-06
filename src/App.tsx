@@ -6,11 +6,7 @@ import Skills from './components/Skills';
 import About from './components/About';
 import Contact from './components/Contact';
 
-// TODO: send email
-// TODO: Email validation
-// TODO: Not a bot security check
 // TODO: Auto Change active links when scrolling
-// TODO: Fix Recaptcha
 // TODO: Check cross browser compatibility
 
 function App() {
@@ -18,7 +14,6 @@ function App() {
     <div className="App">
       <Navigation />
 
-      {/*The main header*/}
       <header id = "main-header">
         <h1>Leamsi Escribano</h1>
         <p>Full Stack Web <span>Developer</span></p>

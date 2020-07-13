@@ -7,6 +7,13 @@
     "code_href" : "https://github.com/liamortiz/dst-quicklookup"
   },
   {
+    "title" : "Book Corner",
+    "description" : "This is a Full Stack web application using PostgresSQL, Rails, Ruby and Javascript. It uses the Google Books API and allows users to browse, favorite and leave reviews on real books. It's slightly optimized for mobile view and uses best security practices when creating accounts.",
+    "tools" : ["JS", "PostgresSQL", "Google API", "Ruby", "Rails", "S(CSS)", "HTML5"],
+    "demo_href" : "https://the-book-corner.herokuapp.com/",
+    "code_href" : "https://github.com/liamortiz/book-corner"
+  },
+  {
     "title" : "3D Model Extractor",
     "description" : "I built this for the modding community. It essentially scrapes asset data for a Donkey Kong game and decompresses/re-arranges it into 3D Models. It was entirely made with Python with a strong understanding of how to handle raw binary data.",
     "tools" : ["Python"],

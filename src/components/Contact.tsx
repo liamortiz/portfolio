@@ -11,23 +11,25 @@ interface IContact {
 class Contact extends Component<{}, IContact> {
   constructor(props : any) {
     super(props);
-    this.state = {
-      verified: false
-    }
+    this.state = { verified: false };
   }
+
+  sendEmail(target : any) {
+    emailjs.sendForm('default_service', "template_AzDMR8bG", target, 'USER-ID')
+    .then((result) => {
+      this.handleSentEmail("OK")
+    }, (error) => {
+      this.handleSentEmail("404")
+    });
+  }
+
   handleSubmit = (event : any) => {
     event.preventDefault();
-    // Sometimes the callback fails
-    let captcha_element : any | null = document.getElementById("g-recaptcha-response");
 
-    if (this.state.verified || captcha_element.value.length !== 0) {
-      emailjs.sendForm('default_service', "template_AzDMR8bG", event.target, 'USER-ID')
-      .then((result) => {
-        this.handleSentEmail("OK")
-      }, (error) => {
-        this.handleSentEmail("404")
-        console.log(error.text);
-      });
+    // Sometimes the callback fails
+    let captcha_element : any = document.getElementById("g-recaptcha-response");
+    if (captcha_element && this.state.verified && captcha_element.value.length !== 0) {
+      this.sendEmail(event.target);
     }
   }
 

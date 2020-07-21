@@ -2,14 +2,14 @@
   {
     "title" : "Recipe Look Up",
     "description" : "Recipe Look Up was made for a game called 'Dont Starve' by 'Klei Entertainment'. I wanted to provide users a way to quickly look up food recipes while in game. One feature I'm very happy about is real time search results. It allows for searching dish recipes in real time.",
-    "tools" : ["React", "S(CSS)", "HTML5", "JSON"],
+    "tools" : ["Javascript", "React", "S(CSS)", "HTML5", "JSON"],
     "demo_href" : "https://liamortiz.github.io/dst-quicklookup/",
     "code_href" : "https://github.com/liamortiz/dst-quicklookup"
   },
   {
     "title" : "Book Corner",
     "description" : "This is a Full Stack web application using PostgresSQL, Rails, Ruby and Javascript. It uses the Google Books API and allows users to browse, favorite and leave reviews on real books. It's slightly optimized for mobile view and uses best security practices when creating accounts.",
-    "tools" : ["JS", "PostgresSQL", "Google API", "Ruby", "Rails", "S(CSS)", "HTML5"],
+    "tools" : ["Javascript", "PostgresSQL", "Google API", "Ruby", "Rails", "S(CSS)", "HTML5"],
     "demo_href" : "https://the-book-corner.herokuapp.com/",
     "code_href" : "https://github.com/liamortiz/book-corner"
   },

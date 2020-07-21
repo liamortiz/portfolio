@@ -42,6 +42,8 @@ class Project extends Component {
                   <img className = "project-img" src = {IMAGES[index]} alt = {project.title}/>
 
                   <div className = "project-description">
+                    {project.title === 'Book Corner' && <p className = "warning">Warning: Heroku unloads the website. Expect small delay.</p>}
+
                     <p>{project.description}</p>
                   </div>
 

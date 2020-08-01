@@ -1,5 +1,12 @@
 [
   {
+    "title" : "Algorithm Imager",
+    "description" : "This was an incredible project, it was extremely difficult, but a lot of fun to work on. My coding buddy and I wanted to dive into how some common algorithms worked and demonstrate their behavior through some form of visualization. Trying to get depth first search to play nice with our visual class was a very challenging thing to do.",
+    "tools" : ["Javascript", "S(CSS)", "HTML5"],
+    "demo_href" : "",
+    "code_href" : "https://github.com/mayalexandera/AlgI"
+  },
+  {
     "title" : "Recipe Look Up",
     "description" : "Recipe Look Up was made for a game called 'Dont Starve' by 'Klei Entertainment'. I wanted to provide users a way to quickly look up food recipes while in game. One feature I'm very happy about is real time search results. It allows for searching dish recipes in real time.",
     "tools" : ["Javascript", "React", "S(CSS)", "HTML5", "JSON"],
@@ -12,13 +19,6 @@
     "tools" : ["Javascript", "PostgresSQL", "Google API", "Ruby", "Rails", "S(CSS)", "HTML5"],
     "demo_href" : "https://the-book-corner.herokuapp.com/",
     "code_href" : "https://github.com/liamortiz/book-corner"
-  },
-  {
-    "title" : "3D Model Extractor",
-    "description" : "I built this for the modding community. It essentially scrapes asset data for a Donkey Kong game and decompresses/re-arranges it into 3D Models. It was entirely made with Python with a strong understanding of how to handle raw binary data.",
-    "tools" : ["Python"],
-    "demo_href" : "",
-    "code_href" : "https://github.com/leamsii/DK-Tropical-Freeze-Model-Extractor"
   },
   {
     "title" : "Spotify CLI Program",

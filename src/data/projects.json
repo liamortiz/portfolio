@@ -2,8 +2,8 @@
   {
     "title" : "Algorithm Imager",
     "description" : "This was an incredible project, it was extremely difficult, but a lot of fun to work on. My coding buddy and I wanted to dive into how some common algorithms worked and demonstrate their behavior through some form of visualization. Trying to get depth first search to play nice with our visual class was a very challenging thing to do.",
-    "tools" : ["Javascript", "S(CSS)", "HTML5"],
-    "demo_href" : "",
+    "tools" : ["Javascript", "React", "S(CSS)", "HTML5"],
+    "demo_href" : "https://mayalexandera.github.io/AlgI/",
     "code_href" : "https://github.com/mayalexandera/AlgI"
   },
   {

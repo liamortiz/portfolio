@@ -4,7 +4,7 @@ import project_data from '../data/projects.json';
 // Project preview images here
 const IMAGES = [
   require("../images/algi.gif"),
-  require("../images/dstpreview.png"),
+  require("../images/dstpreview.gif"),
   require('../images/book_corner.PNG'),
   require("../images/spotify_demo.png"),
   require('../images/portfolio.PNG')

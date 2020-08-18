@@ -26,7 +26,7 @@ const Navigation : React.FC = () => {
         <li><div onClick = {(e) => scroll(e, document.getElementById('skills-section'))}>Skills</div><span></span></li>
         <li><div onClick = {(e) => scroll(e, document.getElementById('about-section'))}>About</div><span></span></li>
         <li><div onClick = {(e) => scroll(e, document.getElementById('contact-section'))}>Contact</div><span></span></li>
-        <li><div><a href = "https://dev.to/leamsii" target = "_blank">Blogs</a></div><span></span></li>
+        <li><div><a href = "https://dev.to/leamsii" target = "_blank" rel="noopener noreferrer" >Blogs</a></div><span></span></li>
       </ul>
     </nav>
   );

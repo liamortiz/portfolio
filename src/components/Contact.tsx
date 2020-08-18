@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Recaptcha from 'react-recaptcha';
 import emailjs from 'emailjs-com';
 
 import linkedin_logo from '../images/linkedin.svg';
@@ -11,24 +10,21 @@ interface IContact {
 class Contact extends Component<{}, IContact> {
   constructor(props : any) {
     super(props);
-    this.state = { verified: false };
+    this.state = {};
   }
 
   sendEmail(target : any) {
     emailjs.sendForm('default_service', "template_AzDMR8bG", target, 'USER-ID')
-    .then((result) => {
+    .then(() => {
       this.handleSentEmail("OK")
-    }, (error) => {
+    }, () => {
       this.handleSentEmail("404")
     });
   }
 
   handleSubmit = (event : any) => {
     event.preventDefault();
-
-    // Sometimes the callback fails
-    let captcha_element : any = document.getElementById("g-recaptcha-response");
-    if (captcha_element && this.state.verified && captcha_element.value.length !== 0) {
+    if (this.state.user_name && this.state.user_email && this.state.subject && this.state.message) {
       this.sendEmail(event.target);
     }
   }
@@ -57,10 +53,6 @@ class Contact extends Component<{}, IContact> {
     })
   }
 
-  onVerify = () => {
-    console.log("Verified");
-    this.setState({verified: true})
-  }
   render() {
     return (
       <div id = "contact-section">
@@ -83,14 +75,6 @@ class Contact extends Component<{}, IContact> {
 
           <button type = "submit">Send</button>
         </form>
-
-        <div className = "recaptcha">
-          <Recaptcha sitekey="6LdcA6oZAAAAAIEoz5BWgM6RTysCy0eiJ63Psu52"
-          render="explicit"
-          theme = "dark"
-          verifyCallback = {this.onVerify}
-          />
-        </div>
 
       </div>
     )

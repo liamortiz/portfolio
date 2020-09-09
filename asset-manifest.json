@@ -1,26 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.ccfa3ee8.chunk.css",
-    "main.js": "/static/js/main.f7b8f225.chunk.js",
-    "main.js.map": "/static/js/main.f7b8f225.chunk.js.map",
+    "main.css": "/static/css/main.fc18de05.chunk.css",
+    "main.js": "/static/js/main.a8477d99.chunk.js",
+    "main.js.map": "/static/js/main.a8477d99.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e5fc83a6.js",
     "runtime-main.js.map": "/static/js/runtime-main.e5fc83a6.js.map",
-    "static/js/2.389470d7.chunk.js": "/static/js/2.389470d7.chunk.js",
-    "static/js/2.389470d7.chunk.js.map": "/static/js/2.389470d7.chunk.js.map",
+    "static/js/2.0249ea0c.chunk.js": "/static/js/2.0249ea0c.chunk.js",
+    "static/js/2.0249ea0c.chunk.js.map": "/static/js/2.0249ea0c.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.4e8f79f13cc0b3c5e7443c5a21244d61.js": "/precache-manifest.4e8f79f13cc0b3c5e7443c5a21244d61.js",
+    "precache-manifest.8584766d8fba4f302a834f2c561bb82d.js": "/precache-manifest.8584766d8fba4f302a834f2c561bb82d.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.ccfa3ee8.chunk.css.map": "/static/css/main.ccfa3ee8.chunk.css.map",
-    "static/js/2.389470d7.chunk.js.LICENSE.txt": "/static/js/2.389470d7.chunk.js.LICENSE.txt",
+    "static/css/main.fc18de05.chunk.css.map": "/static/css/main.fc18de05.chunk.css.map",
+    "static/js/2.0249ea0c.chunk.js.LICENSE.txt": "/static/js/2.0249ea0c.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/static/media/programmer.ab4b1a31.svg",
     "static/media/algi.gif": "/static/media/algi.6f85afcd.gif",
     "static/media/book_corner.PNG": "/static/media/book_corner.21bb4310.PNG",
     "static/media/dstpreview.gif": "/static/media/dstpreview.055d90f9.gif",
     "static/media/git.svg": "/static/media/git.a53c5d77.svg",
     "static/media/github-logo.svg": "/static/media/github-logo.192a6620.svg",
+    "static/media/greenpaws.png": "/static/media/greenpaws.dd2dabd5.png",
     "static/media/html5_icon.svg": "/static/media/html5_icon.9b574ac5.svg",
     "static/media/js_icon.svg": "/static/media/js_icon.684127fb.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.9e36c8fd.svg",
+    "static/media/model_extractor.png": "/static/media/model_extractor.e40ecf11.png",
     "static/media/portfolio.PNG": "/static/media/portfolio.44a823e3.PNG",
     "static/media/python_icon.svg": "/static/media/python_icon.f929fcc3.svg",
     "static/media/rails_icon.svg": "/static/media/rails_icon.bcb113b9.svg",
@@ -33,8 +35,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e5fc83a6.js",
-    "static/js/2.389470d7.chunk.js",
-    "static/css/main.ccfa3ee8.chunk.css",
-    "static/js/main.f7b8f225.chunk.js"
+    "static/js/2.0249ea0c.chunk.js",
+    "static/css/main.fc18de05.chunk.css",
+    "static/js/main.a8477d99.chunk.js"
   ]
 }

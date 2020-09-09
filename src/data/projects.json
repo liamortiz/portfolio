@@ -1,10 +1,24 @@
 [
   {
+    "title" : "Green Paws",
+    "description" : "Some features include product filtering and sorting. Users can create an account and browse through the hundreds of products the store has. The database was seeded with a small Python bot that scrapes other online stores and extracts their products information.",
+    "tools" : ["React", "Redux", "Ruby", "Rails", "PostgreSQL", "Cloudinary", "S(CSS)", "HTML5"],
+    "demo_href" : "https://greenpawsv13.web.app/",
+    "code_href" : "https://github.com/liamortiz/greenpaws"
+  },
+  {
     "title" : "Algorithm Imager",
-    "description" : "This was an incredible project, it was extremely difficult, but a lot of fun to work on. My coding buddy and I wanted to dive into how some common algorithms worked and demonstrate their behavior through some form of visualization. Trying to get depth first search to play nice with our visual class was a very challenging thing to do.",
+    "description" : "I wanted to dive into how some common algorithms worked and demonstrate their behavior through some form of visualization. Using common algorithms like Depth-first search, Breadth-first search, Merge Sort and Quicksort I created unique visualizations combined with JPEG Images.",
     "tools" : ["Javascript", "React", "S(CSS)", "HTML5"],
     "demo_href" : "https://mayalexandera.github.io/AlgI/",
     "code_href" : "https://github.com/mayalexandera/AlgI"
+  },
+  {
+    "title" : "Python 3D Model Extractor",
+    "description" : "This essentially takes in raw binary data from compressed encrypted files and decompresses them into 3D models. It was entirely made with Python with a strong understanding of how to handle binary data and different compression algorithms.",
+    "tools" : ["Python"],
+    "demo_href" :  "",
+    "code_href" : "https://github.com/leamsii/DK-Tropical-Freeze-Model-Extractor"
   },
   {
     "title" : "Recipe Look Up",

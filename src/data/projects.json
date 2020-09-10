@@ -1,7 +1,7 @@
 [
   {
-    "title" : "Green Paws",
-    "description" : "Some features include product filtering and sorting. Users can create an account and browse through the hundreds of products the store has. The database was seeded with a small Python bot that scrapes other online stores and extracts their products information.",
+    "title" : "Green Paws eCommerce",
+    "description" : "This is an all dogs eCommerce website. Some features include product filtering and sorting. Users can create an account and browse through the hundreds of products the store has. The database was seeded with a small Python bot that scrapes other online stores and extracts their products information.",
     "tools" : ["React", "Redux", "Ruby", "Rails", "PostgreSQL", "Cloudinary", "S(CSS)", "HTML5"],
     "demo_href" : "https://greenpawsv13.web.app/",
     "code_href" : "https://github.com/liamortiz/greenpaws"

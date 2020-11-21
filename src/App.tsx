@@ -16,7 +16,7 @@ function App() {
 
       <header id = "main-header">
         <h1>Leamsi Escribano</h1>
-        <p>Full Stack Web <span>Developer</span></p>
+        <p>Frontend Web <span>Developer</span></p>
         <div className = "intro-icon"></div>
         <small>Saving the world one byte at a time!</small>
       </header>

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import project_data from '../data/projects.json';
 
-// Project preview images here
 const IMAGES = [
   require("../images/greenpaws.png"),
   require("../images/algi.gif"),
@@ -12,26 +11,7 @@ const IMAGES = [
   require('../images/portfolio.PNG')
 ]
 
-// Project Interface from JSON file
-interface IProjectObject {
-  title : string;
-  description : string;
-  tools : string[];
-  demo_href : string;
-  code_href : string;
-}
-
 class Project extends Component {
-  // Get a list of tools from json data
-  get_tools(project : IProjectObject) {
-    return (
-      project.tools.map((tool, index) => {
-        return (
-          <li key = {index} className = "tool">{tool}</li>
-        )
-      })
-    );
-  }
   render() {
     return (
       <div id = "project-section">
@@ -44,8 +24,12 @@ class Project extends Component {
                   <img className = "project-img" src = {IMAGES[index]} alt = {project.title}/>
 
                   <div className = "project-description">
-                    {project.title === 'Book Corner' && <p className = "warning">Warning: Heroku unloads the website. Expect small delay.</p>}
-
+                    {
+                    (project.title === 'Book Corner' || project.title === "Green Paws eCommerce") && 
+                    <p className = "warning">
+                      Warning: Heroku unloads the website. Expect small delay.
+                    </p>
+                    }
                     <p>{project.description}</p>
                   </div>
 
@@ -55,13 +39,16 @@ class Project extends Component {
                       rel="noopener noreferrer"
                       href = {project.code_href}>Code</a>
                     {
-                      project.demo_href && <a target = "_blank" rel="noopener noreferrer" href = {project.demo_href}>Demo</a>
+                      project.demo_href && 
+                      <a target = "_blank" rel="noopener noreferrer" href = {project.demo_href}>Demo</a>
                     }
                   </div>
 
                 </div>
                 <ul className = "tools-list">
-                  {this.get_tools(project)}
+                  {
+                    project.tools.map((tool, index) => <li key = {index} className = "tool">{tool}</li>)
+                  }
                 </ul>
               </div>
             )

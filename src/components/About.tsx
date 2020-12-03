@@ -10,20 +10,19 @@ const About : React.FC = () => {
         </div>
 
         <div className = "description">
-          <h3>My name is Leamsi Escribano</h3>
+          <h3>Hi I'm Liam</h3>
           <p>
-            I've been programming for about 8 years now on and off. I started
-            making <span>2D games</span> using a language called Dream Deamon.
+            I've been programming for a few years now, on and off. I started
+            making <span>2D games</span> using a language called Dream Deamon when I was in High School.
           </p>
           <p>
-            I then moved over to using <span>Python</span> and made applications for people on discord servers
-            <a rel="noopener noreferrer" target = "_blank" title = "Github.com" href = "https://github.com/leamsii"> un-offical Github</a>. At the time I worked in the IT industry but my dream
+            I then started using <span>Python</span> and made cool applications for people on discord servers <a rel="noopener noreferrer" target = "_blank" title = "Github.com" href = "https://github.com/leamsii"> 
+            un-offical Github</a>. At the time, I worked in IT but my dream
             was always to become a developer.
           </p>
           <p>
-            <span>After COVID-19</span> I was let go and decided now was the best time for me to do everything in my power to
-            become a developer. That's when I found <a rel="noopener noreferrer" target = "_blank" href ="https://flatironschool.com/">Flatiron School </a>
-            and began sharpening my skills as a web developer.
+            I eventually decided to join <span>Flatiron School</span> and become a Software Engineer.
+            I finished their intensive program and officially started my Software Engineering career.
           </p>
         </div>
       </div>

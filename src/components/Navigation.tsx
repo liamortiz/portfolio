@@ -2,7 +2,6 @@ import React from 'react';
 const Navigation : React.FC = () => {
 
   function scroll(event : any, element : Element | null) : void {
-    // Remove the current active link and update the new one
     if (element && event) {
       document.getElementsByClassName("active")[0].classList.remove("active");
       event.target.classList.add("active");
@@ -11,7 +10,6 @@ const Navigation : React.FC = () => {
   }
 
   function expandNav() : void {
-    // When clicking on the navigation button expand nav
     const navigationElement : Element | null = document.getElementById("navbar");
     if (navigationElement) {
       navigationElement.classList.toggle("hidden");
@@ -26,7 +24,6 @@ const Navigation : React.FC = () => {
         <li><div onClick = {(e) => scroll(e, document.getElementById('skills-section'))}>Skills</div><span></span></li>
         <li><div onClick = {(e) => scroll(e, document.getElementById('about-section'))}>About</div><span></span></li>
         <li><div onClick = {(e) => scroll(e, document.getElementById('contact-section'))}>Contact</div><span></span></li>
-        <li><div><a href = "https://dev.to/leamsii" target = "_blank" rel="noopener noreferrer" >Blogs</a></div><span></span></li>
       </ul>
     </nav>
   );

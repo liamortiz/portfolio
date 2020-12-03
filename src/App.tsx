@@ -6,9 +6,6 @@ import Skills from './components/Skills';
 import About from './components/About';
 import Contact from './components/Contact';
 
-// TODO: Auto Change active links when scrolling
-// TODO: Check cross browser compatibility
-
 function App() {
   return (
     <div className="App">

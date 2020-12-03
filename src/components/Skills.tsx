@@ -4,12 +4,12 @@ const Skills : React.FC = () => {
   return (
     <div id = "skills-section">
       <ul>
-        <li><img src = {require('../images/skills-icons/html5_icon.svg')} alt = "HTML"/><span>HTML</span></li>
-        <li><img src = {require('../images/skills-icons/sass_icon.svg')} alt = "CSS"/><span>CSS/SASS</span></li>
+        <li><img src = {require('../images/skills-icons/html5_icon.svg')} alt = "HTML"/><span>HTML5</span></li>
+        <li><img src = {require('../images/skills-icons/sass_icon.svg')} alt = "CSS"/><span>S(CSS)</span></li>
         <li><img src = {require('../images/skills-icons/js_icon.svg')} alt = "Javascript"/><span>Javascript</span></li>
         <li><img src = {require('../images/skills-icons/typescript.svg')} alt = "Typescript"/><span>Typescript</span></li>
         <li><img src = {require('../images/skills-icons/react_icon.svg')} alt = "React"/><span>React</span></li>
-        <li><img src = {require('../images/skills-icons/mongodb.png')} alt = "Mongodb"/><span>Mongodb</span></li>
+        <li><img src = {require('../images/skills-icons/redux.png')} alt = "Redux"/><span>Redux</span></li>
         <li><img src = {require('../images/skills-icons/sql.svg')} alt = "SQL"/><span>SQL</span></li>
 
         <li><img src = {require('../images/skills-icons/ruby_icon.svg')} alt = "Ruby"/><span>Ruby</span></li>

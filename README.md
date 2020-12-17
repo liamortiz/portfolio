@@ -1,5 +1,5 @@
 # Personal Portfolio
-:point_right: Live View https://escribano.app
+:point_right: https://escribano.app
 
 <img src="https://i.ibb.co/Sn5YK56/Capture.png" alt="Capture" border="0" />
 

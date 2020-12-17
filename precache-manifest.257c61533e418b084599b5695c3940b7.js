@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "18c0d35b9957ef71de1f147e81de12a8",
+    "revision": "240bac909394a6d5a5e76b353b9a9157",
     "url": "/index.html"
   },
   {
-    "revision": "4d520ca7aaa332302ce0",
+    "revision": "146cd2e3f9a7bba10db4",
     "url": "/static/css/main.fc18de05.chunk.css"
   },
   {
-    "revision": "aaa84105a4adc0c32ad0",
-    "url": "/static/js/2.0249ea0c.chunk.js"
+    "revision": "b598d49382345252567b",
+    "url": "/static/js/2.5cb778fe.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/static/js/2.0249ea0c.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.5cb778fe.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4d520ca7aaa332302ce0",
-    "url": "/static/js/main.3e6b49f4.chunk.js"
+    "revision": "146cd2e3f9a7bba10db4",
+    "url": "/static/js/main.13395d41.chunk.js"
   },
   {
     "revision": "b4ba650b238755144e2a",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "21bb4310aa4ae40032bc4b21f43f7354",
     "url": "/static/media/book_corner.21bb4310.PNG"
+  },
+  {
+    "revision": "e07220dc914639df2991b992c69b3533",
+    "url": "/static/media/dogsguardian.e07220dc.png"
   },
   {
     "revision": "055d90f9d4d4df574f76bd65222a3edf",

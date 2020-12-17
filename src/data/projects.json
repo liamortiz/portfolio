@@ -1,5 +1,12 @@
 [
   {
+    "title" : "Algorithm Imager",
+    "description" : "I wanted to dive into how some common algorithms worked and demonstrate their behavior through some form of visualization. Using common algorithms like Depth-first search, Breadth-first search, Merge Sort and Quicksort I created unique visualizations combined with JPEG Images.",
+    "tools" : ["Javascript", "React", "S(CSS)", "HTML5"],
+    "demo_href" : "https://mayalexandera.github.io/AlgI/",
+    "code_href" : "https://github.com/mayalexandera/AlgI"
+  },
+  {
     "title" : "Green Paws eCommerce",
     "description" : "This is an all dogs eCommerce website. Some features include product filtering and sorting. Users can create an account and browse through the hundreds of products the store has. The database was seeded with a small Python bot that scrapes other online stores and extracts their products information.",
     "tools" : ["React", "Redux", "Ruby", "Rails", "PostgreSQL", "Cloudinary", "S(CSS)", "HTML5"],
@@ -7,11 +14,18 @@
     "code_href" : "https://github.com/liamortiz/greenpaws"
   },
   {
-    "title" : "Algorithm Imager",
-    "description" : "I wanted to dive into how some common algorithms worked and demonstrate their behavior through some form of visualization. Using common algorithms like Depth-first search, Breadth-first search, Merge Sort and Quicksort I created unique visualizations combined with JPEG Images.",
-    "tools" : ["Javascript", "React", "S(CSS)", "HTML5"],
-    "demo_href" : "https://mayalexandera.github.io/AlgI/",
-    "code_href" : "https://github.com/mayalexandera/AlgI"
+    "title" : "Dog's Guardian",
+    "description" : "Looking to adopt a new pet? Use this website to help you find one! Using Petfinder's API and Google Places API, this website has all the information you'd need to make a decision. Easy to use and all in one single page.",
+    "tools" : ["Typescript", "React", "S(CSS)", "HTML5", "Figma", "Recoil"],
+    "demo_href" : "https://dogs-guardian.web.app/",
+    "code_href" : "https://github.com/liamortiz/dogs-guardian"
+  },
+  {
+    "title" : "Book Corner",
+    "description" : "This is a Full Stack web application using PostgresSQL, Rails, Ruby and Javascript. It uses the Google Books API and allows users to browse, favorite and leave reviews on real books. It's slightly optimized for mobile view and uses best security practices when creating accounts.",
+    "tools" : ["Javascript", "PostgresSQL", "Google API", "Ruby", "Rails", "S(CSS)", "HTML5"],
+    "demo_href" : "https://the-book-corner.herokuapp.com/",
+    "code_href" : "https://github.com/liamortiz/book-corner"
   },
   {
     "title" : "Python 3D Model Extractor",
@@ -26,13 +40,6 @@
     "tools" : ["Javascript", "React", "S(CSS)", "HTML5", "JSON"],
     "demo_href" : "https://liamortiz.github.io/dst-quicklookup/",
     "code_href" : "https://github.com/liamortiz/dst-quicklookup"
-  },
-  {
-    "title" : "Book Corner",
-    "description" : "This is a Full Stack web application using PostgresSQL, Rails, Ruby and Javascript. It uses the Google Books API and allows users to browse, favorite and leave reviews on real books. It's slightly optimized for mobile view and uses best security practices when creating accounts.",
-    "tools" : ["Javascript", "PostgresSQL", "Google API", "Ruby", "Rails", "S(CSS)", "HTML5"],
-    "demo_href" : "https://the-book-corner.herokuapp.com/",
-    "code_href" : "https://github.com/liamortiz/book-corner"
   },
   {
     "title" : "Spotify CLI Program",

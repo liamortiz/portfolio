@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import project_data from '../data/projects.json';
 
 const IMAGES = [
-  require("../images/greenpaws.png"),
   require("../images/algi.gif"),
+  require("../images/greenpaws.png"),
+  require("../images/dogsguardian.png"),
+  require('../images/book_corner.PNG'),
   require("../images/model_extractor.png"),
   require("../images/dstpreview.gif"),
-  require('../images/book_corner.PNG'),
   require("../images/spotify_demo.png"),
   require('../images/portfolio.PNG')
 ]
